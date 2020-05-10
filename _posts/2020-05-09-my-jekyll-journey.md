@@ -13,7 +13,9 @@ jekyll _3.8.5_ new .
 # then edited Gemfile to select jekyll version 3.8.5, github-pages version 204
 bundle update
 bundle install # updated Gemfile.lock
+# after that I could serve the site locally with the following command
 bundle exec jekyll serve
+# but note that you need to stop (ctrl-C) and restart for any changes to _config.yml to take effect
 ```
 
 First I put everything in the docs folder (in the master branch), following GitHub's instructions, but then [my site][my-site] returned 404 - GitHub couldn't find anything. I fixed it by moving the files from the docs folder to the repository root folder. I guessed this solution because the repository settings page says "User pages must be built from the master branch." I didn't see [the choices listed here][github-pages-choosing-a-publishing-source].
