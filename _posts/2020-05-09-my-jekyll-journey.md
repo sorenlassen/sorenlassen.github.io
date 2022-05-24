@@ -4,15 +4,15 @@ title:  "My Jekyll journey"
 date:   2020-05-09 18:00:00 -0700
 categories: jekyll
 ---
-<i>UPDATE February 13, 2022: Bumped jekyll and github-pages versions.</i>
+<i>UPDATE May 24, 2022: Bumped jekyll and github-pages versions.</i>
 
 Here are some workarounds I discovered while troubleshooting things that didn't work for me on Mac when I tried to follow the [GitHub.com Jekyll instructions][github-jekyll-instructions]. Jekyll is a blog site generator that works with GitHub Pages to create and host a free blog at https://<i>your-github-accountname</i>.github.io
 
 At the point where the instructions said to run `bundle exec jekyll VERSION new .` or `jekyll VERSION new .` I couldn't make those work until I found these commands:
 ```shell
-gem install jekyll -v 3.9.0
-jekyll _3.9.0_ new .
-# then edited Gemfile to select jekyll version 3.9.0, github-pages version 223
+gem install jekyll -v 3.9.2
+jekyll _3.9.2_ new .
+# then edited Gemfile to select jekyll version 3.9.2, github-pages version 226
 bundle update
 bundle install # updated Gemfile.lock
 # after that I could serve the site locally with the following command
